@@ -9,6 +9,7 @@ function getComputerChoice() {
     }
     //If the condition isn't met, add another condition to check if the random number is between 33 and 65
     else if (randomNum >= 33 && randomNum <= 65) {
-        
+        //Return 'Paper' if the condition is met
+        return 'Paper';
     }
 }
