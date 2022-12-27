@@ -40,10 +40,15 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+//Declare variable playerSelection
 let playerSelection;
+//Declare variable computerSelection
 let computerSelection;
+//Declare and initialize variable playerScore
 let playerScore = 0;
+//Declare and initialize variable computerScore
 let computerScore = 0;
+//Declare variable playRoundStatus
 let playRoundStatus;
 
 //Create a function that runs 5 rounds of the game
@@ -84,15 +89,17 @@ function game() {
         console.log("You win!");
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
-    //if the computer wins, display the score and the string "You lose!"
+    //If the computer wins, display the score and the string "You lose!"
     else if (playerScore < computerScore) {
         console.log("You lose!");
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
+    //If it's a tie, display the score and the string "It's a tie!"
     else {
         console.log("It's a tie!");
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
 }
 
+//Run the game
 console.log(game());
