@@ -68,5 +68,9 @@ function game() {
         else if (playRoundStatus == 'computer wins') {
             computerScore++;
         }
+        //If playRoundStatus is 'tie', display the string 'It's a tie'
+        else if (playRoundStatus == 'tie') {
+            console.log("It's a tie");
+        }
     }
 }
