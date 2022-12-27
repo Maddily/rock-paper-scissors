@@ -59,7 +59,7 @@ function game() {
         //Call getComputerChoice() and store the returned value in computerSelection
         computerSelection = getComputerChoice();
         //Display computerSelection
-        console.log(computerSelection);
+        console.log("Computer: " + computerSelection);
         //Call playRound() and store its returned value in playRoundStatus
         playRoundStatus = playRound(playerSelection, computerSelection);
     }
