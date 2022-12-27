@@ -20,38 +20,20 @@ function getComputerChoice() {
 
 //Create a function that takes two parameters and plays one round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-    //If the player's selection is 'rock' and the computer's selection is 'scissors', return "You win! Rock beats Scissors"
-    if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors') {
+    //If the player wins
+    if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock'
+    || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'paper') {
         playerScore++;
         return "You win! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
     }
-    //If the player's selection is 'rock' and the computer's selection is 'paper', return "You lose! Paper beats Rock"
-    else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper') {
-        computerScore++;
-        return "You lose! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
-    }
-    //If the player's selection is 'paper' and the computer's selection is 'rock', return "You win! Paper beats Rock"
-    else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock') {
-        playerScore++;
-        return "You win! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
-    }
-    //If the player's selection is 'paper' and the computer's selection is 'scissors', return "You lose! Scissors beats Paper"
-    else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors') {
-        computerScore++;
-        return "You lose! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
-    }
-    //If the player's selection is 'scissors' and the computer's selection is 'paper', return "You win! Scissors beats Paper"
-    else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        playerScore++;
-        return "You win! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
-    }
-    //If the player's selection is 'scissors' and the computer's selection is 'rock', return "You lose! Rock beats Scissors"
-    else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
+    //If the player loses
+    else if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'scissors'
+    || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'rock') {
         computerScore++;
         return "You lose! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
     }
     //if the player's selection equals the computer's selection, return "It's a tie!"
-    else if (playerSelection.toLowerCase() == computerSelection) {
+    else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
         return "It's a tie! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
     }
     //If the player's input isn't rock, paper or scissors, return "Wrong input! check your spelling"
