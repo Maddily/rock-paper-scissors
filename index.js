@@ -34,7 +34,7 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
         return "tie";
     }
-    //If the player's input isn't rock, paper or scissors, return "Wrong input! check your spelling"
+    //If the player's input isn't rock, paper or scissors, return "Wrong input"
     else {
         return "wrong input";
     }
@@ -71,6 +71,10 @@ function game() {
         //If playRoundStatus is 'tie', display the string 'It's a tie'
         else if (playRoundStatus == 'tie') {
             console.log("It's a tie");
+        }
+        //If the player's input isn't rock, paper or scissors, display "Wrong input! check your spelling"
+        else {
+            console.log("Wrong input! check your spelling");
         }
     }
 }
