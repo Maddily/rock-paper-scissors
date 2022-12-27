@@ -94,3 +94,5 @@ function game() {
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
 }
+
+console.log(game());
