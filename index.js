@@ -54,9 +54,5 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-const computerSelection = getComputerChoice();
-const playerSelection = 'rock';
+const playerSelection = prompt('Enter your selection: ');
 
-console.log(getComputerChoice());
-console.log(playerSelection);
-console.log(playRound(playerSelection, computerSelection));
