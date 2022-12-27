@@ -55,7 +55,7 @@ function game() {
         //Ask the user to input their selection
         playerSelection = prompt('Enter your selection: ');
         //Display playerSelection
-        console.log(playerSelection);
+        console.log("You: " + playerSelection);
         //Call getComputerChoice() and store the returned value in computerSelection
         computerSelection = getComputerChoice();
         //Display computerSelection
