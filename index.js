@@ -48,4 +48,8 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
         return "It's a tie!";
     }
+    //If the user's input isn't rock, paper or scissors, return "Wrong input! check your spelling"
+    else {
+        return "Wrong input! check your spelling";
+    }
 }
