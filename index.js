@@ -36,4 +36,8 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'scissors') {
         return "You lose! Scissors beats Paper";
     }
+    //If the user's selection is 'scissors' and the computer's selection is 'paper', return "You win! Scissors beats Paper"
+    else if (playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'paper') {
+        return "You win! Scissors beats Paper";
+    }
 }
