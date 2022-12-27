@@ -24,21 +24,21 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'paper') {
         playerScore++;
-        return "You win! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
+        return "player wins";
     }
     //If the player loses
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'rock') {
         computerScore++;
-        return "You lose! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
+        return "computer wins";
     }
     //if the player's selection equals the computer's selection, return "It's a tie!"
     else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
-        return "It's a tie! The score now is:- You: " + playerScore + " - Computer: " + computerScore;
+        return "tie";
     }
     //If the player's input isn't rock, paper or scissors, return "Wrong input! check your spelling"
     else {
-        return "Wrong input! Check your spelling";
+        return "wrong input";
     }
 }
 
@@ -60,7 +60,5 @@ function game() {
         computerSelection = getComputerChoice();
         //Display computerSelection
         console.log(computerSelection);
-        //If the player wins, increase their score
-
     }
 }
