@@ -44,4 +44,8 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'rock') {
         return "You lose! Rock beats Scissors";
     }
+    //if the player's selection equals the computer's selection, return "It's a tie!"
+    else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
+        return "It's a tie!";
+    }
 }
