@@ -63,5 +63,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
         //Ask the user to input their selection
         playerSelection = prompt('Enter your selection: ');
+        //Log playerSelection
+        console.log(playerSelection);
     }
 }
