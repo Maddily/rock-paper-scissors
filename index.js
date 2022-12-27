@@ -23,13 +23,11 @@ function playRound(playerSelection, computerSelection) {
     //If the player wins
     if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'paper') {
-        playerScore++;
         return "player wins";
     }
     //If the player loses
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'rock') {
-        computerScore++;
         return "computer wins";
     }
     //if the player's selection equals the computer's selection, return "It's a tie!"
