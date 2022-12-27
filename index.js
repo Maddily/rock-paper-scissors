@@ -25,11 +25,15 @@ function playRound(playerSelection, computerSelection) {
         return "You win! Rock beats Scissors";
     }
     //If the player's selection is 'rock' and the computer's selection is 'paper', return "You lose! Paper beats Rock"
-    if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper') {
+    else if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper') {
         return "You lose! Paper beats Rock";
     }
     //If the player's selection is 'paper' and the computer's selection is 'rock', return "You win! Paper beats Rock"
-    if (playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock') {
+    else if (playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock') {
         return "You win! Paper beats Rock";
+    }
+    //If the player's selection is 'paper' and the computer's selection is 'scissors', return "You lose! Scissors beats Paper"
+    else if (playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'scissors') {
+        return "You lose! Scissors beats Paper";
     }
 }
