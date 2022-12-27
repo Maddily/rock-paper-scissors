@@ -12,7 +12,7 @@ function getComputerChoice() {
         //Return 'Paper' if the condition is met
         return 'Paper';
     }
-    //If the condition isn't met, return 'Scissors'
+    //If the conditions aren't met, return 'Scissors'
     else {
         return 'Scissors';
     }
