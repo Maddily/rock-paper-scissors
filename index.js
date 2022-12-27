@@ -17,3 +17,8 @@ function getComputerChoice() {
         return 'Scissors';
     }
 }
+
+//Create a function that takes two parameters and plays one round of Rock Paper Scissors
+function playRound(playerSelection, computerSelection) {
+    
+}
