@@ -55,4 +55,4 @@ function playRound(playerSelection, computerSelection) {
 }
 
 const playerSelection = prompt('Enter your selection: ');
-
+const computerSelection = getComputerChoice();
