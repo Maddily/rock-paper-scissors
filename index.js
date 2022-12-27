@@ -65,7 +65,7 @@ function game() {
             playerScore++;
         }
         //If playRoundStatus is 'computer wins', increment computerScore
-        if (playRoundStatus == 'computer wins') {
+        else if (playRoundStatus == 'computer wins') {
             computerScore++;
         }
     }
