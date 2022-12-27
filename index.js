@@ -56,3 +56,8 @@ function playRound(playerSelection, computerSelection) {
 
 const playerSelection = prompt('Enter your selection: ');
 const computerSelection = getComputerChoice();
+
+//Create a function that runs 5 rounds of the game
+function game() {
+    
+}
