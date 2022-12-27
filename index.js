@@ -48,7 +48,7 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() == computerSelection) {
         return "It's a tie!";
     }
-    //If the user's input isn't rock, paper or scissors, return "Wrong input! check your spelling"
+    //If the player's input isn't rock, paper or scissors, return "Wrong input! check your spelling"
     else {
         return "Wrong input! check your spelling";
     }
@@ -56,6 +56,7 @@ function playRound(playerSelection, computerSelection) {
 
 let playerSelection;
 let computerSelection;
+let playerScore = 0;
 
 //Create a function that runs 5 rounds of the game
 function game() {
@@ -69,5 +70,7 @@ function game() {
         computerSelection = getComputerChoice();
         //Display computerSelection
         console.log(computerSelection);
+        //If the player wins, increase their score
+
     }
 }
