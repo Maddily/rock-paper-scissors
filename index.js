@@ -24,8 +24,12 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'scissors') {
         return "You win! Rock beats Scissors";
     }
-    //If the user's selection is 'rock' and the computer's selection is 'paper', return "You lose! Paper beats Rock"
+    //If the player's selection is 'rock' and the computer's selection is 'paper', return "You lose! Paper beats Rock"
     if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper') {
         return "You lose! Paper beats Rock";
+    }
+    //If the player's selection is 'paper' and the computer's selection is 'rock', return "You win! Paper beats Rock"
+    if (playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock') {
+        return "You win! Paper beats Rock";
     }
 }
