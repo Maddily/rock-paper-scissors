@@ -65,6 +65,7 @@ function game() {
         playerSelection = prompt('Enter your selection: ');
         //Display playerSelection
         console.log(playerSelection);
-        //
+        //Call getComputerChoice() and store the returned value in computerSelection
+        computerSelection = getComputerChoice();
     }
 }
