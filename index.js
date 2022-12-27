@@ -20,5 +20,8 @@ function getComputerChoice() {
 
 //Create a function that takes two parameters and plays one round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-    
+    //If the player's selection is 'rock' and the computer's selection is 'scissors', return "You win! Rock beats Scissors"
+    if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'scissors') {
+        return "You win! Rock beats Scissors";
+    }
 }
