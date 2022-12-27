@@ -55,7 +55,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 let playerSelection;
-const computerSelection = getComputerChoice();
+let computerSelection;
 
 //Create a function that runs 5 rounds of the game
 function game() {
@@ -63,7 +63,8 @@ function game() {
     for (let i = 0; i < 5; i++) {
         //Ask the user to input their selection
         playerSelection = prompt('Enter your selection: ');
-        //Log playerSelection
+        //Display playerSelection
         console.log(playerSelection);
+        //
     }
 }
