@@ -54,14 +54,14 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-const playerSelection;
+let playerSelection;
 const computerSelection = getComputerChoice();
 
 //Create a function that runs 5 rounds of the game
 function game() {
     //Create a for loop to run the game 5 times
     for (let i = 0; i < 5; i++) {
-        //Log the playerSelection
-
+        //Ask the user to input their selection
+        playerSelection = prompt('Enter your selection: ');
     }
 }
