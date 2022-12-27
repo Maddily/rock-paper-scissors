@@ -60,5 +60,9 @@ function game() {
         console.log("Computer: " + computerSelection);
         //Call playRound() and store its returned value in playRoundStatus
         playRoundStatus = playRound(playerSelection, computerSelection);
+        //if playRoundStatus is 'player wins', increment playerScore
+        if (playRoundStatus == 'player wins') {
+            playerScore++;
+        }
     }
 }
