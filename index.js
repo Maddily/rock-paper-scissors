@@ -57,6 +57,7 @@ function playRound(playerSelection, computerSelection) {
 let playerSelection;
 let computerSelection;
 let playerScore = 0;
+let computerScore = 0;
 
 //Create a function that runs 5 rounds of the game
 function game() {
