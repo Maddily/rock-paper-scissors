@@ -60,13 +60,15 @@ function game() {
         console.log("Computer: " + computerSelection);
         //Call playRound() and store its returned value in playRoundStatus
         playRoundStatus = playRound(playerSelection, computerSelection);
-        //If playRoundStatus is 'player wins', increment playerScore
+        //If playRoundStatus is 'player wins', increment playerScore and display the result
         if (playRoundStatus == 'player wins') {
             playerScore++;
+            console.log("You win this round!");
         }
-        //If playRoundStatus is 'computer wins', increment computerScore
+        //If playRoundStatus is 'computer wins', increment computerScore and display the result
         else if (playRoundStatus == 'computer wins') {
             computerScore++;
+            console.log("You lose this round!");
         }
         //If playRoundStatus is 'tie', display the string 'It's a tie'
         else if (playRoundStatus == 'tie') {
@@ -76,5 +78,10 @@ function game() {
         else {
             console.log("Wrong input! check your spelling");
         }
+    }
+    //If the player wins, display the score and the string "You win!"
+    if (playerScore > computerScore) {
+        console.log("You win!");
+        console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
 }
