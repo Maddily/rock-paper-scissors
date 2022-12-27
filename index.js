@@ -89,4 +89,8 @@ function game() {
         console.log("You lose!");
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
+    else {
+        console.log("It's a tie!");
+        console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
+    }
 }
