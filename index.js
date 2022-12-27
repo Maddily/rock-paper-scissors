@@ -84,4 +84,9 @@ function game() {
         console.log("You win!");
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
+    //if the computer wins, display the score and the string "You lose!"
+    if (playerScore < computerScore) {
+        console.log("You lose!");
+        console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
+    }
 }
