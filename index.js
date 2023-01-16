@@ -100,6 +100,3 @@ function game() {
         console.log("The score:\nYou: " + playerScore + " - Computer: " + computerScore);
     }
 }
-
-//Run the game
-console.log(game());
