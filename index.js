@@ -28,9 +28,6 @@ function playRound(playerSelection, computerSelection) {
     else if (playerSelection.toLowerCase() == computerSelection) {
         results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie\n\n`;
     }
-    else {
-        results.textContent = "Wrong input!";
-    }
 }
 
 function getPlayerSelection(button) {
