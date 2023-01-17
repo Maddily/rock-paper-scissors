@@ -37,6 +37,8 @@ function playRound(playerSelection, computerSelection) {
         else if (computerScore === 5) {
             results.textContent += "The computer wins the game!"
         }
+        playerScore = 0;
+        computerScore = 0;
     }
 }
 
