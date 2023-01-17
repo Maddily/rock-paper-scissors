@@ -17,20 +17,20 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round\n\n`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round\n\n__\n\n`;
         playerScore++;
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nComputer wins this round\n\n`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThe computer wins this round\n\n__\n\n`;
         computerScore++;
     }
     else {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie\n\n`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie\n\n__\n\n`;
     }
 
     if (playerScore === 5 || computerScore === 5) {
-        results.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
+        results.textContent += `________\n\nYou: ${playerScore}\nComputer: ${computerScore}\n\n`;
         if (playerScore === 5) {
             results.textContent += "You win the game!"
         }
