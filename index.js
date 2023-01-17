@@ -14,7 +14,8 @@ function getComputerChoice() {
 
 //Create a function that plays one round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-
+    
+    results.textContent = "";
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
         results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round\n\n__\n\n`;
