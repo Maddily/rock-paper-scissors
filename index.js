@@ -36,3 +36,7 @@ function playRound(playerSelection, computerSelection) {
         console.log("Wrong input!");
     }
 }
+
+function getPlayerSelection(button) {
+    return button.textContent;
+}
