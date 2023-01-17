@@ -40,3 +40,5 @@ function playRound(playerSelection, computerSelection) {
 function getPlayerSelection(button) {
     return button.textContent;
 }
+
+const buttons = document.querySelectorAll('button');
