@@ -28,6 +28,11 @@ function playRound(playerSelection, computerSelection) {
     else {
         results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie\n\n`;
     }
+
+    if (playerScore === 5 || computerScore === 5) {
+        results.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
+        
+    }
 }
 
 function getPlayerSelection(button) {
