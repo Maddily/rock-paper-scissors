@@ -25,6 +25,7 @@ function playRound(playerSelection, computerSelection) {
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
         results.textContent = `You: ${playerSelection.toLowerCase()} - 
         Computer: ${computerSelection}`;
+        computerScore++;
     }
     else if (playerSelection.toLowerCase() == computerSelection) {
         console.log(`You: ${playerSelection.toLowerCase()}`);
