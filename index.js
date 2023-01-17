@@ -23,9 +23,8 @@ function playRound(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
-        console.log(`You: ${playerSelection.toLowerCase()}`);
-        console.log(`Computer: ${computerSelection}`);
-        console.log("Computer wins!");
+        results.textContent = `You: ${playerSelection.toLowerCase()} - 
+        Computer: ${computerSelection}`;
     }
     else if (playerSelection.toLowerCase() == computerSelection) {
         console.log(`You: ${playerSelection.toLowerCase()}`);
