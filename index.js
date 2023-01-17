@@ -19,7 +19,7 @@ function playRound(playerSelection, computerSelection) {
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
         results.textContent = `You: ${playerSelection.toLowerCase()} - 
         Computer: ${computerSelection}`;
-        
+        playerScore++;
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
