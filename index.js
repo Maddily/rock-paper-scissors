@@ -14,19 +14,19 @@ function getComputerChoice() {
 
 //Create a function that plays one round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'rock'
-    || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'paper') {
+
+    if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
+    || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
         return "player wins";
     }
-    else if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection.toLowerCase() == 'scissors'
-    || playerSelection.toLowerCase() == 'scissors' && computerSelection.toLowerCase() == 'rock') {
+    else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
+    || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
         return "computer wins";
     }
-    else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
+    else if (playerSelection.toLowerCase() == computerSelection) {
         return "tie";
     }
     else {
         return "wrong input";
     }
 }
-
