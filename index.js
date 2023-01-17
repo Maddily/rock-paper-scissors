@@ -33,6 +33,6 @@ function playRound(playerSelection, computerSelection) {
         console.log("It's a tie!");
     }
     else {
-        return "wrong input";
+        console.log("Wrong input!");
     }
 }
