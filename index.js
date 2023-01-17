@@ -28,9 +28,8 @@ function playRound(playerSelection, computerSelection) {
         computerScore++;
     }
     else if (playerSelection.toLowerCase() == computerSelection) {
-        console.log(`You: ${playerSelection.toLowerCase()}`);
-        console.log(`Computer: ${computerSelection}`);
-        console.log("It's a tie!");
+        results.textContent = `You: ${playerSelection.toLowerCase()} - 
+        Computer: ${computerSelection}`;
     }
     else {
         console.log("Wrong input!");
