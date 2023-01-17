@@ -31,6 +31,9 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerScore === 5 || computerScore === 5) {
         results.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
+        if (playerScore === 5) {
+            results.textContent += "You win the game!"
+        }
         
     }
 }
