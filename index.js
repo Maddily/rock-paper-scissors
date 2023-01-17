@@ -42,6 +42,7 @@ function getPlayerSelection(button) {
 }
 
 const buttons = document.querySelectorAll('button');
+let results = document.querySelector('.results');
 
 buttons.forEach((button) => button.addEventListener('click', () => {
     playRound(getPlayerSelection(button), getComputerChoice());
