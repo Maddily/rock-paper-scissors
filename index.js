@@ -17,8 +17,7 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        results.textContent = `You: ${playerSelection.toLowerCase()} - 
-        Computer: ${computerSelection}`;
+        results.textContent = `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round`;
         playerScore++;
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
@@ -42,6 +41,7 @@ function getPlayerSelection(button) {
 
 const buttons = document.querySelectorAll('button');
 let results = document.querySelector('.results');
+results.setAttribute('style', 'white-space: pre;');
 let playerScore = 0;
 let computerScore = 0;
 
