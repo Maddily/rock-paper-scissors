@@ -32,7 +32,7 @@ function playRound(playerSelection, computerSelection) {
         Computer: ${computerSelection}`;
     }
     else {
-        console.log("Wrong input!");
+        results.textContent = "Wrong input!";
     }
 }
 
