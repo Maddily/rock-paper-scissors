@@ -17,9 +17,9 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        console.log(`You: ${playerSelection.toLowerCase()}`);
-        console.log(`Computer: ${computerSelection}`);
-        console.log("You win!");
+        results.textContent = `You: ${playerSelection.toLowerCase()} - 
+        Computer: ${computerSelection}`;
+        
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
