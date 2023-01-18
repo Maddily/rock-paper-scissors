@@ -19,19 +19,19 @@ function playRound(playerSelection, computerSelection) {
     scoreDisplay.textContent = "";
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round\n\n`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round`;
         playerScore++;
-        scoreDisplay.textContent += `___\n\n\nYou: ${playerScore}\nComputer: ${computerScore}\n\n`;
+        scoreDisplay.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThe computer wins this round\n\n`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThe computer wins this round`;
         computerScore++;
-        scoreDisplay.textContent += `___\n\n\nYou: ${playerScore}\nComputer: ${computerScore}\n\n`;
+        scoreDisplay.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
     }
     else {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie\n\n`;
-        scoreDisplay.textContent += `___\n\n\nYou: ${playerScore}\nComputer: ${computerScore}\n\n`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie`;
+        scoreDisplay.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
     }
 
     if (playerScore === 5 || computerScore === 5) {
