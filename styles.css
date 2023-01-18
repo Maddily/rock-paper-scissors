@@ -38,6 +38,10 @@ body {
     gap: 1vw;
 }
 
+button {
+    padding: 0.3rem 1rem;
+}
+
 .rock {
     color: #e3be7a;
 }
