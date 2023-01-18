@@ -18,16 +18,18 @@ body {
 }
 
 .rock {
-    background-color: #e3be7a;
+    color: #e3be7a;
 }
 
 .paper {
-    background-color: #5eaae9;
+    color: #5eaae9;
 }
 
 .scissors {
-    background-color: #bd74d4;
+    color: #bd74d4;
 }
+
+
 
 .results {
     color: #df6b74;
