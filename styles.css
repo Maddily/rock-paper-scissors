@@ -119,4 +119,7 @@ p {
         gap: 3.5vh;
     }
     
+    .results, .score-and-winner {
+        width: 30vw;
+    }
 }
