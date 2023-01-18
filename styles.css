@@ -31,7 +31,7 @@ body {
 
 .rock, .paper, .scissors {
     border: 1px solid #cc9764;
-    
+    background-color: #282c34;
 }
 
 .results {
