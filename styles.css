@@ -55,3 +55,7 @@ body {
     align-items: center;
     padding: 2rem;
 }
+
+.buttons, .results, .score-and-winner {
+    height: 30vh;
+}
