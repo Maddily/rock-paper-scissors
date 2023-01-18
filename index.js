@@ -54,6 +54,7 @@ const buttons = document.querySelectorAll('button');
 let results = document.querySelector('.results');
 let scoreDisplay = document.querySelector('.score-and-winner');
 results.setAttribute('style', 'white-space: pre;');
+scoreDisplay.setAttribute('style', 'white-space: pre;');
 let playerScore = 0;
 let computerScore = 0;
 
