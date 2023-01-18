@@ -60,7 +60,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #a4abb7;
 }
 
 .score-and-winner {
@@ -69,6 +68,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+.results, .score-and-winner {
+    border: 1px solid #a4abb7;
 }
 
 p {
