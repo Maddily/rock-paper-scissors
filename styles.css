@@ -62,5 +62,7 @@ body {
 
 p {
     color: #a4abb7;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
