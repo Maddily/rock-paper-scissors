@@ -19,27 +19,27 @@ function playRound(playerSelection, computerSelection) {
     scoreDisplay.textContent = "";
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nYou win this round`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\n\nYou win this round`;
         playerScore++;
         scoreDisplay.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
     }
     else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper' || playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors'
     || playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThe computer wins this round`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\n\nThe computer wins this round`;
         computerScore++;
         scoreDisplay.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
     }
     else {
-        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\nThis round, it's a tie`;
+        results.textContent += `You: ${playerSelection.toLowerCase()}\nComputer: ${computerSelection}\n\nThis round, it's a tie`;
         scoreDisplay.textContent += `You: ${playerScore}\nComputer: ${computerScore}\n\n`;
     }
 
     if (playerScore === 5 || computerScore === 5) {
         if (playerScore === 5) {
-            scoreDisplay.textContent += "\nYou win the game!"
+            scoreDisplay.textContent += "You win the game!"
         }
         else if (computerScore === 5) {
-            scoreDisplay.textContent += "\nThe computer wins the game!"
+            scoreDisplay.textContent += "The computer wins the game!"
         }
         playerScore = 0;
         computerScore = 0;
