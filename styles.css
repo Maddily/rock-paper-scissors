@@ -67,10 +67,6 @@ body {
     padding: 2rem;
 }
 
-.buttons, .results, .score-and-winner, p {
-    height: 20vh;
-}
-
 p {
     color: #a4abb7;
     display: flex;
