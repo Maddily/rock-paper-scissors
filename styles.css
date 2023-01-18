@@ -73,3 +73,7 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+.buttons-and-results, .score-and-winner, p {
+    width: 100%;
+}
