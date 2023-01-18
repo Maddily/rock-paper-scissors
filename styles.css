@@ -29,7 +29,10 @@ body {
     color: #bd74d4;
 }
 
-
+.rock, .paper, .scissors {
+    border: 1px solid #cc9764;
+    
+}
 
 .results {
     color: #df6b74;
