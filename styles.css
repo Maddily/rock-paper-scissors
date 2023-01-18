@@ -12,6 +12,11 @@ body {
     padding: 2rem;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
 .rock {
     background-color: #e3be7a;
 }
