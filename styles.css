@@ -11,7 +11,7 @@ body {
 }
 
 .body {
-    width: fit-content;
+    width: 50%;
     border: 1px solid #a4abb7;
 }
 
@@ -54,6 +54,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #a4abb7;
 }
 
 .score-and-winner {
