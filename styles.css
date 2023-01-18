@@ -59,3 +59,7 @@ body {
 .buttons, .results, .score-and-winner {
     height: 20vh;
 }
+
+p {
+    color: #a4abb7;
+}
