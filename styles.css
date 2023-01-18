@@ -10,6 +10,11 @@ body {
     align-items: center;
 }
 
+.body {
+    width: fit-content;
+    
+}
+
 .buttons-and-results {
     display: flex;
     justify-content: space-evenly;
