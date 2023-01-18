@@ -9,6 +9,7 @@ body {
 .buttons-and-results {
     display: flex;
     justify-content: space-evenly;
+    padding: 2rem;
 }
 
 .rock {
