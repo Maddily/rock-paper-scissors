@@ -72,6 +72,8 @@ body {
 
 .results, .score-and-winner {
     border: 1px solid #a4abb7;
+    width: 10vw;
+    height: 15vh;
 }
 
 p {
@@ -81,6 +83,6 @@ p {
     align-items: center;
 }
 
-.buttons-and-results, .score-and-winner, p {
+.buttons-and-results, p {
     width: 100%;
 }
