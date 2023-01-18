@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #282c34;
+}
+
 .buttons-and-results {
     display: flex;
     justify-content: space-evenly;
