@@ -105,3 +105,9 @@ p {
 .buttons-and-results, p {
     width: 100%;
 }
+
+@media only screen and (max-width: 1550px) {
+    .results, .score-and-winner {
+        width: 20vw;
+    }
+}
