@@ -45,10 +45,6 @@ body {
     background-color: #282c34;
 }
 
-.buttons, .results {
-    width: 25vw;
-}
-
 .results {
     color: #df6b74;
     display: flex;
