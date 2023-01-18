@@ -45,6 +45,7 @@ body {
     color: #df6b74;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .score-and-winner {
