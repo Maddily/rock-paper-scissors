@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# Rock Paper Scissors
 
 
 This is a simple implementation of rock paper scissors.
