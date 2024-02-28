@@ -129,3 +129,14 @@ p {
         width: 40vw;
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .body {
+        width: 70%;
+        height: 70%;
+    }
+
+    .results, .score-and-winner {
+        width: 60vw;
+    }
+}
